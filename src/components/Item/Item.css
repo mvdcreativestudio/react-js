@@ -1,14 +1,10 @@
 .producto {
-    max-width: 20%;
     padding: 10px;
     margin: 10px;
     margin-bottom: 20px;
     border: solid 1px black;
 }
 
-.img-producto {
-    max-width: 100%;
-}
 
 .nombreProducto {
     font-family: Montserrat;
@@ -28,11 +24,11 @@
     font-family: Montserrat;
     padding: 5px 15px 5px 15px;
     border-radius: 5px;
-    
+    text-decoration: none;
+
 }
 
-.btnAddToCart:hover {
-    background-color: white;
-    color: black;
-    border: solid 1px black;
+.tarjetaProducto {
+    border: 1px solid black;
+    padding-bottom: 20px;
 }

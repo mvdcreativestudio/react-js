@@ -11,3 +11,7 @@
 .navbar {
     height: 150px;
 }
+
+.claseActiva {
+    font-weight: bolder;
+}
