@@ -3,7 +3,7 @@ import {ItemDetail} from "../ItemDetail/ItemDetail"
 import JeanVogue from "../../assets/imgProductos/jean-vogue.png"
 
 const product = {id: 1, nombre: "Jean Vogue", categoria: "jeans", estado: "destacado", cantidad: 1, precio: 1200, oldPrice: 1900, img: JeanVogue}
-
+ 
 export const ItemDetailContainer = () => {
 
     const [data, setData] = useState ({});
