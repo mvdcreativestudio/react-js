@@ -1,8 +1,10 @@
 .iconoCart {
     color: white;
+    font-size: 1.4em;
 }
 
 .contadorCart {
     color: white;
     padding-left: 5px;
+    font-weight: bolder;
 }

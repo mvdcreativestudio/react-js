@@ -20,28 +20,28 @@ export const NavBar = () => {
                                     <Link to="/" className="nav-link" aria-current="page">Inicio</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/jeans" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Jeans</NavLink>
+                                    <NavLink to="/categorias/zapatillas" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Zapatillas</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/camperas" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Camperas</NavLink>
+                                    <NavLink to="/categorias/remeras" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Remeras</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/conjuntos" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Conjuntos</NavLink>
+                                    <NavLink to="/categorias/buzos" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Buzos</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/camisas" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Camisas</NavLink>
+                                    <NavLink to="/categorias/camperas" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Camperas</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/sacos" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Sacos</NavLink>
+                                    <NavLink to="categorias/pantalones" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Pantalones</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink to="/ropa/vestidos" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Vestidos</NavLink>
+                                    <NavLink to="/accesorios" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page">Accesorios</NavLink>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div>
-                        <CartIcon/>
+                        <NavLink to="/cart" className="nav-link {({isActive})=> === true ? 'claseActiva' : ''}" aria-current="page"><CartIcon></CartIcon></NavLink>
                     </div>
                 </div>
             </div>

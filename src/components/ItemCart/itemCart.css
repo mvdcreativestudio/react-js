@@ -1,0 +1,18 @@
+.itemCart { 
+    display: flex;
+    padding: 40px 40px;
+    max-width: 500px;
+    margin: 1rem auto;
+    border: 1px solid black; 
+}
+
+.itemCart img {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+.botonEliminar {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}

@@ -1,22 +1,21 @@
 import React, {useState, useEffect} from "react";
-import {ItemDetail} from "../ItemDetail/ItemDetail"
-import JeanVogue from "../../assets/imgProductos/jean-vogue.png"
+import {ItemDetail} from "../ItemDetail/ItemDetail";
+import {useParams} from "react-router-dom";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 
-const product = {id: 1, nombre: "Jean Vogue", categoria: "jeans", estado: "destacado", cantidad: 1, precio: 1200, oldPrice: 1900, img: JeanVogue}
+
  
 export const ItemDetailContainer = () => {
 
     const [data, setData] = useState ({});
+    const { productoId } = useParams();
 
     useEffect(() => {
-        const getData = new Promise (resolve => {
-            setTimeout(() => {
-                resolve(product);
-            }, 1000);
-        });
-
-        getData.then (res => setData(res))
-    }, [])
+        const querydb = getFirestore();
+        const queryDoc = doc(querydb, 'products', productoId);
+        getDoc(queryDoc)
+            .then(res => setData({ id: res.id, ...res.data() }))
+    }, [productoId])
 
 
 

@@ -1,12 +1,21 @@
+import React from 'react';
 import '../CartIcon/CartIcon.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { useCartContext } from '../../context/cartContext';
+
+
 
 export const CartIcon = () => {
+
+    const { totalProducts } = useCartContext();
+
     return(
         <div className='contenedor-icono'>
-            <FontAwesomeIcon icon={faCoffee} className="iconoCart"/>
-            <span className="contadorCart">5</span>
+            <FontAwesomeIcon icon={faShoppingCart} className="iconoCart"/>
+            <span className="contadorCart">{totalProducts() || ''}</span>
         </div>
     )
 }
+
+export default CartIcon;

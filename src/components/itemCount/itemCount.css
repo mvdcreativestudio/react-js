@@ -1,0 +1,31 @@
+.botonRestar {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.botonSumar {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 10px;
+}
+
+.cantidad {
+    width: 40px;
+}
+
+.botonAddToCart {
+    border: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bolder;
+    margin-top: 40px;
+}

@@ -1,7 +1,8 @@
 export const categorias = [
+    {name:"zapatillas"},
     {name:"Remeras"},
-    {name:"Vestidos"},
-    {name:"Summer 23"},
-    {name:"Zapatos"},
+    {name:"Buzos"},
+    {name:"Camperas"},
+    {name:"Pantalones"},
     {name:"Accesorios"},
   ]
